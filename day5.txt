@@ -1,0 +1,38 @@
+write a program to generate the following exceptions:
+
+negativearraysize exception
+
+castClass exception
+
+nullPointer exception
+
+
+create a method evey method will be a exception
+
+illegalArgument exception
+
+
+
+Ques 2:
+write a program for a banking operation with the following options:
+
+1: create account:
+	the user has to input account number, account name, account type, balance amount (deposit)
+
+2: view specific account details by inputing account number or account name or account type:
+
+3: view all account:
+	the information to be shown: sorting by account holder name
+
+4: modify and delete account:
+	modify: is done only for name and account type with respect to account number
+	
+
+NOTE: 
+1: When searching for account id or modifying account based on account id if account number is not
+available throw accountNotFound exception.
+
+2: use one class for controller, one class getter and setters, one class for logic, one class for exception.
+
+3: account id to be alpha numeric with min of 10 chars, name of account holder not exceeding 25 characters, 
+the type of accounts are checking and saving only

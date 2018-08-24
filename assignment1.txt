@@ -1,0 +1,37 @@
+create class myFirstClass 
+create 3 variables of type integer, double, String in which string is static variable 
+and remaining 2 are instance variables
+
+print all 3 values from main method.
+
+create a method in the same class m1 with no parameters and print all 3 values
+local variable int i=600;
+
+
+and create another method m2 
+create local variable int i=500;
+print it
+
+
+question 2: 
+
+create class mySecondClass 
+print values of 3 variables defined in myFirstClass in main
+create a non static method m1 no parameters
+print values of 3 varaibles from myFirstClass
+
+question 3:
+write a program which will concatenate the values to print your full name by taking input from the user dynamically 
+in the following way,
+enter first name: ayush
+enter last name: bhatt
+
+your full name is ayush bhatt.
+
+note the logic is written in a different method
+the input is taken from the main method
+use scanner class to take input dynamically
+
+question 4: 
+create a calculator class
+4 functions

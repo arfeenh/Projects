@@ -1,0 +1,33 @@
+!: create login.html which takes username and password a role (customer,admin) 
+contains 2 links forgot password and register as new user 
+
+2: create passwordform.html
+which takes user id, current password, new password, confirm new password
+with the link back to login
+
+3: create registrationform.html:
+which contains following inputs:
+full name
+dob
+gender
+email id
+phone number
+type of user(customer type or admin type)
+upload profile pic
+understand term and agreements (checkmark)
+once the registration is successful it redirects to login page
+
+4: create on main servlet one pojo class and one java class, one model class
+one utility class where request processing will be done in the controller, all variables defined in pojo, 
+all logical 
+methods like validate login, change psw, register user will be done jdbc code of enabling connections will be done 
+
+create success.html and redirect to this page if the login is succesful showing the username on the screen
+if login is unsuccesful redirect it to login screen with the message incorrect credentials 
+
+
+email
+
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+
+<script src = "abc_valid.js"> </script>

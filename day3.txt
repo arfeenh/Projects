@@ -1,0 +1,35 @@
+Q1: write a program to generate the following output:
+
+please enter the number of values you want to enter in a double type array
+
+enter the first value 1
+enter the second value and so on till user chosen value
+1,2,3,4,5
+
+please choose one of the below ops:
+
+1:find smallest and largest
+2:avg
+3:identify the duplicate elements
+4:showing the elements with a number of times repeated
+5:print reverse elements of array
+6:find second largest and second smallest
+7:finding the common elements comparing with older array to new array (create new array and do comparison)
+8:exit
+
+
+Q2: write a program for the following scenario:
+Ahmed owns a condo building which has 5 floors and every floor has 5 units and every unit can accomodate 3 customers.
+
+write a program which will allow ahmed to view the available spots in the building and can able to allocate a 
+customer to a particular spot in aparticular unit on a particular floor.
+
+and also should be able to deallocate the customer from a particular unit.
+
+Q: use arrays (single dimension) to do following activites 
+1: allocate customer 
+2: view status (every floor: unit 3 spots filled; unit 4: 2 spots avail
+3: deallocate 
+
+similar operations as told above using multidimension arrays.
+

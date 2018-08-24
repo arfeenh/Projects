@@ -1,0 +1,51 @@
+select tablespace_name, table_name from all_tables;
+
+
+create a table productModel with the following columns:
+
+productModelId 
+productModelName
+productModelDescription
+price
+inventoryQuantity
+
+
+create a second table productTable with the following columns:
+
+product_id
+Product_name
+product_model_id
+price
+
+create a third table discountTable with the following columns:
+discount_id
+product_model_id
+discount_percentage
+valid_from
+valid_to
+
+create a 4th table transactionTable with the following columns:
+transaction_id
+product_id
+price
+discount_applied
+sold_date
+customer_information
+
+1: write a query to identify total money lost because of the discount applied on various product models
+product model amount of data lost
+
+2: find the list of the product models where the price is are not matching with there respective products
+
+3: Write a query to show the total sales of the product models in a descending order of the sales.
+
+4: Write a query to show the number of product models that are applicable for a discount in the last three months
+
+5: write a query to show the details of the customer who missed discount in the last one month 
+
+NOTE: 
+
+1: create all tables with the table names _1559835
+2: apply all applicable constraints on the columns
+3: logically decide the data that has to be entered (put valid date)
+4: feel free to change schema (only add columns no deletion)

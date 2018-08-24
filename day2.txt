@@ -1,0 +1,144 @@
+write a program to check the eligibility of a person to apply for g1, g2 and g based on age, 
+citizenship status, driving license from other country and experience of driving in months using if conditions.
+
+work permit (65 months driving experience india) 
+yes have license in india
+
+age int or double
+citizen status defined string pr immigrant citizen
+driving leicen other country yes or no char
+drving experience int or double
+
+
+
+Question 2 
+
+write a program to print numbers divisble by 3 and 7 using loops where the
+starting number and the ending number range is given by the user.
+
+Question  3
+
+write a program to generate factorial of a given number 
+
+
+question 4
+
+write a program to generate the sum of even numbers and sum of odd numbers from a given range 
+
+question 5 
+
+create a multiplication table of a given number using loops
+
+
+question 6
+
+write a program where user enters a whole number and compares to every number in a range provided by the user and prints
+ out a boolean for each of the following cases in a table:
+
+GreaterThan
+LessThan
+Equal
+Greater Thsan or Equal to 
+Less Than or equal to
+Not equal
+
+however if the product ofboth num  is divisible by 3
+print out fizz in all the places 
+
+if product of number and i is divisible by 7 print out buzz 
+if divisible by both print out fizz buzz
+
+
+question 7
+
+given a number, check if each digit in that number is either 3 or 7 and print "yes" if it is, "No" otherwise
+
+example:
+
+3773
+3333333
+7
+
+
+question 8
+given two numbers, check if they're equal without using an if statement
+
+3,4 --> False
+3,3 --> True
+
+print boolean for each of the following pieces
+
+
+question 9:
+
+making sandwich
+base price = $2
+
+user has options what thehy wannt to add :
+
+1- onion
+2- tomato
+3- chicken
+4- beef
+5- mayo
+
+once they are done their options, if they have:
+
+onion and letture  - add $2
+beef or chicken - add $3
+no mayo subtract $1
+
+find out how many sandwiches they want 
+give the final cost of their meal
+
+Question 11:
+prompt the user for an odd number(x),
+
+then print out a sequence that starts with 1 and then follows the pattern 'odd,even,odd,even' 
+in ascending order until your sequence contains(x) numbers, use any type of loop
+
+eg. if given the number 5, the sequence to be printed is 1,3,2,5,4
+
+
+Question 12:
+the output of the program will be followed as given below:
+
+	please choose one of the below options:
+	1: basic arithmatic operations
+	2: computational operations
+	3: exit
+
+if option 1: 
+	1:addtion
+	2:multiplication
+	3:division
+	4:go back
+	5:exit fully
+
+if option 2:
+	1:the factorial of a number (1 input)
+	2:find power (2 inputs)
+	3:find average of the given range (2 inputs)
+	4:go back 
+	5:exit fully
+
+NOTE:The options have to be looped continuosly until the user chooses to exit
+
+CONDITIONS: 
+	1:Calculator main class should only contain a switch case
+	2:Calculator logic will contain all the methods with their respective logic
+
+
+Question 12:
+Create an employee controller class, employee logic class, employee class where main method will be in controller class. 
+variables declared in emplyee class
+logical methods are declared in emplyee logic class
+the variables in the employee class are:
+	1:emp id
+	2:emp name
+	3:emp salary
+and initialed in the constructor making the variables private
+
+Add 2 employees taking input dynamically and print the employee informatrion in the console.
+
+COMMON NOTE: All input needs to be validated
