@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="abc.css">
+
+
+<header id="header">
+ <div id="content" >
+    <div class="clearfix">
+        <div id="left">
+            <div class="container"> <h1 class="pad"> ABC Enterprise </h1> </div>
+        </div>
+        <div id="right">
+            <div class="container" align="right"> 
+				<p>Time: <span id="time"></span></p>
+				<script>
+					function startTime() {
+						var today = new Date();
+						var h = today.getHours();
+						var m = today.getMinutes();
+						var s = today.getSeconds();
+						m = checkTime(m);
+						s = checkTime(s);
+						document.getElementById('time').innerHTML =
+						h + ":" + m + ":" + s;
+						var t = setTimeout(startTime, 500);
+					}
+					function checkTime(i) {
+						if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+						return i;
+					}
+				</script>
+				<body onload="startTime()">
+
+					<div id="time"></div>
+
+				</body>
+				<p>Date: <span id="date"></span></p>
+					<script> var dt = new Date(); document.getElementById("date").innerHTML = dt.toLocaleDateString(); </script>
+					<br/>
+					<p>
+						Welcome Guest
+					</p>
+
+			</div>
+        </div> 
+    </div>
+</div>
+</header>
+<div >  
+  <div  id="form_style" >
+  <form id="register" method= "get" action ="MainServlet" >
+		<table align="center" >
+			<h1 align="center"> Login </h1>
+			<tr> 
+				<td> Username/ email </td>
+				<td> <input type="text" name="email" />
+				</td>
+			</tr>
+
+			<tr> 
+				<td> Password </td>
+				<td> <input type="text" name="password" />
+				</td>
+			</tr>
+			<tr>
+				<td> Select Role </td>
+				<td> 
+					<select name="role">
+					<option value="customer"> Customer </option>
+					<option value="admin"> Admin </option>
+					</select>
+				</td>
+			</tr>
+
+		</table>
+		
+		<div class="clearfix" align="center">
+			
+			<input type="submit" value="Register"/>
+			<button type="cancel" class="cancelbtn">Cancel</button>
+   </div >
+	<div align="center">
+		<a href="url"></a>
+		<p><a href="registrationform.html" style="color:dodgerblue">Click here</a> to register.</p>
+	</div>
+		<div align="center">
+		<a href="url"></a>
+		<p><a href="passwordform.html" style="color:dodgerblue">Click here</a> to reset password.</p>
+	</div>
+	</form>
+</div>
+	
+	
+<meta charset="UTF-8">
+</head>
+
+<body>
+  <footer align="center">
+  <p>All Rights Reserved @ ABC Enterprise</p>
+</footer>
+
+<script src = "abc_valid.js"> </script>
+</body>
+
+</html>

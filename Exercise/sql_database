@@ -1,0 +1,21 @@
+create table user1559835(
+	email varchar(50),
+	password varchar(15),
+	role number(1,0),
+	full_name varchar (45),
+	gender number,
+	phone varchar(11),
+	profile_pic varchar(40),
+	dob varchar(10)
+)
+
+drop table user1559835
+
+select * from user1559835
+
+insert into user1559835 values("+email+","+pass+","+role+","+fullname+","+gender+","+phone+","+pic+"
+insert into user1559835 values('mdks','fewfewf',1,'efwfe ewf',2,'4322432','3242')
+
+select password from User1559835 where email='mdks';
+
+"select password from User1559835 where email='"+user+"'";

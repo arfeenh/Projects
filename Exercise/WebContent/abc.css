@@ -1,0 +1,41 @@
+#content{
+    /* the width in here will be changed 
+    width: this requirment will be changed
+    i dont' want to type my left, right content static
+    is there a way? */
+}
+#left{
+    float:left;
+}
+#right{
+    float:right;
+
+}
+
+#top{
+}
+
+#header {
+    text-align: center;
+    color: black;
+}
+
+#form_style{
+background-color: PaleTurquoise;
+
+}
+
+body{
+background-image: url("https://amazingpict.com/wp-content/uploads/2015/06/blurry-pattern-background-image.png")
+}
+
+
+
+.pad{
+padding-left: 1px;
+}
+.container {
+}
+.clearfix{
+overflow: auto;
+}

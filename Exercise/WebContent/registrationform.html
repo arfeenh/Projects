@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="abc.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<header id="header">
+ <div id="content" >
+    <div class="clearfix">
+        <div id="left">
+            <div class="container"> <h1 class="pad"> ABC Enterprise </h1> </div>
+        </div>
+        <div id="right">
+            <div class="container" align="right"> 
+				<p>Time: <span id="time"></span></p>
+				<script>
+					function startTime() {
+						var today = new Date();
+						var h = today.getHours();
+						var m = today.getMinutes();
+						var s = today.getSeconds();
+						m = checkTime(m);
+						s = checkTime(s);
+						document.getElementById('time').innerHTML =
+						h + ":" + m + ":" + s;
+						var t = setTimeout(startTime, 500);
+					}
+					function checkTime(i) {
+						if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+						return i;
+					}
+				</script>
+				<body onload="startTime()">
+
+					<div id="time"></div>
+
+				</body>
+				<p>Date: <span id="date"></span></p>
+					<script> var dt = new Date(); document.getElementById("date").innerHTML = dt.toLocaleDateString(); </script>
+					<br/>
+					<p>
+						Welcome Guest
+					</p>
+
+			</div>
+        </div> 
+    </div>
+</div>
+</header>
+<div >
+ 
+  
+  <div  id="form_style" >
+  <form id="register" method= "get" action ="MainServlet" onsubmit="return validate()">
+		<table align="center" >
+			<h1 align="center"> Registration Form </h1>
+			<tr> 
+				<td> Full Name </td>
+				<td> <input type="text" name="full_name" "/>
+				</td>
+			</tr>
+			
+			<tr> 
+				<td> Password </td>
+				<td> <input type="text" name="password" "/>
+				</td>
+			</tr>
+
+			<tr> 
+				<td> Gender </td>
+				<td> 
+					<input type="radio" name="gender" value="male"> Male </input>
+					<input type="radio" name="gender" value="female"> Female </input>
+					<input type="radio" name="gender" value="other"> Other </input> 
+
+				</td>
+			</tr>
+			<tr>
+				<td> Date of Birth </td>
+				<td> <input type="date" required="required" name="dob" ><br> </td>
+			</tr>
+			<tr>
+				<td> Select Type </td>
+				<td> 
+					<select name="role">
+					<option  value="Customer"> Customer </option>
+					<option  value="Admin"> Admin </option>
+
+					</select>
+				</td>
+			</tr>
+			<tr> 
+				<td> Phone Number </td>
+				<td>
+					<input type="text" name="number" required="required" pattern="[1-9]{1}[0-9]{9}"> 
+				</td>
+			</tr>			
+			<tr>
+				<td> Email </td>
+				<td> 
+					<style>
+					  .error {
+						background: red;
+					  }
+					</style>
+					<input type="text"  name="email" required ="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="file" name= "pic" onchange="previewFile()"><br>
+				<img src="" height="200" alt="Image preview...">
+				</td>
+			</tr>
+			
+			<tr> 
+				<td> 
+					<input type="checkbox" id="conditions" required="required" name="Agree to terms and conditions" >
+					<label for="Agree">Agree to terms and conditions</label>
+				</td>
+			</tr>
+		</table>
+		
+		<div class="clearfix" align="center">
+			
+			<input type="submit" value="Register" id="check"/>
+
+			<button type="cancel" class="cancelbtn">Cancel</button>
+			<form onsubmit="return confirm('Do you really want to submit the form?');">
+    </div >
+	<div align="center">
+		<a href="url"></a>
+		<p><a href="login.html" style="color:dodgerblue">Click here</a> to login.</p>
+	</div>
+		
+	</form>
+</div>
+	
+	
+<meta charset="UTF-8">
+</head>
+
+<body>
+  <footer align="center">
+  <p>All Rights Reserved @ ABC Enterprise</p>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src = "abc.js"> </script>
+
+</body>
+
+</html>
